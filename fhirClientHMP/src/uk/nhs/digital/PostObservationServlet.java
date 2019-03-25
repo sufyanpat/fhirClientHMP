@@ -29,7 +29,7 @@ import ca.uhn.fhir.rest.client.api.IGenericClient;
  * Servlet implementation class GetIdServlet
  */
 @WebServlet("/postObservation")
-public class PostObservation extends HttpServlet {
+public class PostObservationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	FhirContext ctx = FhirContext.forDstu3();
@@ -71,7 +71,7 @@ public class PostObservation extends HttpServlet {
 			return;
 		}
 		
-		
+		System.out.println("Using Observation Servlet");
 		String serverBase = request.getParameter("serverURL");
 		String family = request.getParameter("postFamilyName");
 		String given = request.getParameter("postGivenName");
