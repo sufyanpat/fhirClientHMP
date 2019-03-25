@@ -1,10 +1,14 @@
 <html>
 <head>
-<title>FHIR Client Dashboard</title>
+<title>FHIR Client HMP</title>
 </head>
 <body>
 
-<h2>Patient: </h2><input type = "hidden" value="John Doe"/>
+<h2>Patient: </h2><input type = "text" value="John Doe"/>
+<input type="text" value="112233445566"/>
+<input type="text" name="serverURL"
+			value="http://cdwebintl01.corp.internal:8085/hapi-fhir-jpaserver-example/baseDstu3" size="50px"><br />
+
 <form action="getIdServlet" method="get">
 		<h2>Search Using ID</h2>
 		URL: <input type="text" name="serverURL"
